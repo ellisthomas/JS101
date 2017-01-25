@@ -1,13 +1,18 @@
 var element = document.getElementById("sonnet");
-element.innerHTML = sonnet;
-
+console.log(element);
 var sonnet = element.innerHTML;
 
-console.log("sonnet", sonnet);
+var indexOfOrphans = sonnet.indexOf("orphans");
+console.log(indexOfOrphans);
 
-var element = orphans;
-console.log("starting position of orphans: ", quote.indexOf("orphans"));
+alert("There are " + sonnet.length +" characters in this sonnet");
+
+var textreplace = sonnet.replace("winter","yuletide");
+console.log(textreplace);
+
+var globalreplace = sonnet.replace(/the/g,"a large");
+console.log(globalreplace);
 
 
-
-console.log("sonnet: ", quote.length);
+document.getElementById("sonnet").innerHTML = "When your brain is fried from JavaScript!"
+console.log(sonnet);

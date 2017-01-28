@@ -10,5 +10,3 @@ var textreplace = sonnet.replace("winter","yuletide");
 var globalreplace = sonnet.replace(/the /g," a large");
 
 element.innerHTML = globalreplace;
-
-
